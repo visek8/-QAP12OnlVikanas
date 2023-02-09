@@ -1,0 +1,4 @@
+*.[oa]
+build/
+doc/*.txt
+!lib.a
