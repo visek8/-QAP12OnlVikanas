@@ -1,3 +1,16 @@
+<h1>
+Hi! 
+<img src="https://media.giphy.com/media/3Ii2SW00oLZ8k/giphy.gif" width="30px"/>
+</h1>
+<h1>
+git clone https://github.com/visek8/-QAP12OnlVikanas.git - clone project
+</h1>
+<h1>
+pip3 install -r requirements.txt - install requires
+</h1>
+<h1>
+python3 -m pytest test/test_first_example.py - start test
+</h1>
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
 </div>
