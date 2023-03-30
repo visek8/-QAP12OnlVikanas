@@ -64,9 +64,9 @@ swimmer = {'Бекиш Александр': 21.07, 'Будник Алексей'
 
 def swim(swimmer):
     for i in swimmer:
-        winner = max(swimmer.values())
+        winner = min(swimmer.values())
         winner_dict = {k: w for k, w in swimmer.items() if w == winner}
-        print(winner_dict)
+    print(winner_dict)
 
 
 swim(swimmer)
@@ -81,7 +81,7 @@ unik = [1, 5, 2, 9, 2, 9, 1]
 def un(unik):
     for i in unik:
         resalt = (min(unik, key=unik.count))
-        print(resalt)
+    print(resalt)
 
 
 un(unik)

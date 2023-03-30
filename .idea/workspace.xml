@@ -8,8 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f939807-0324-4c52-a9b7-99848dcfb9d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/homework/dz_4/for.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/dz_4/while.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/dz_4/for.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework/dz_4/for.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
