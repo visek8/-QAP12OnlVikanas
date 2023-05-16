@@ -6,7 +6,7 @@ school = {"10a": 15, "11в": 14, "1а": 22, "3б": 23, "5г": 18, "7д": 20, "8�
 
 # 2 Узнайте сколько человек в каком-нибудь классе.
 def sch(school):
-    print(school["10a"])
+    return school["10a"]
 
 
 sch(school)
@@ -27,7 +27,7 @@ def sch1(school):
     school.pop("8е")
     school["8a"] = 14
     school["8б"] = 11
-    print(school)
+    return school
 
 
 sch1(school)

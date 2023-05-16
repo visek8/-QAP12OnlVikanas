@@ -4,7 +4,7 @@ h_2 = ['пять', 'шесть', 'семь', 'восемь']
 
 
 def hh(h_1, h_2):
-    print(h_1, h_2, sep='\n')
+    return h_1, h_2
 
 
 hh(h_1, h_2)
@@ -12,7 +12,7 @@ hh(h_1, h_2)
 
 # 2 Извлеките из первого списка второй элемент
 def ha(h_1):
-    print(h_1[1])
+    return h_1[1]
 
 
 ha(h_1)
@@ -22,7 +22,7 @@ ha(h_1)
 def hp(h_2):
     h_2.pop()
     h_2.append('девять')
-    print(h_2)
+    return h_2
 
 
 hp(h_2)
@@ -32,7 +32,7 @@ hp(h_2)
 # получившийся список на экран.
 def h_s(h_1, h_2):
     h_12 = h_1 + h_2
-    print(h_12)
+    return h_12
 
 
 h_s(h_1, h_2)
@@ -45,8 +45,7 @@ h_12 = h_1 + h_2
 
 def h_k(h_12):
     k = len(h_12) / 2 - 2
-    print(k)
-    print(h_12[2:])
+    return k, h_12[2:]
 
 
 h_k(h_12)
@@ -56,7 +55,7 @@ h_k(h_12)
 def h_6(h_12):
     h_01 = ['числа', 'цифры']
     h_12.extend(h_01)
-    print(h_12)
+    return h_12
 
 
 h_6(h_12)
@@ -72,7 +71,7 @@ b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
 def h_7(a, b):
     c = list(set(a) & set(b))
-    print(c)
+    return c
 
 
 h_7(a, b)
@@ -84,7 +83,7 @@ d = [1, 2, 3, 4, 3, 2, 5, 1, 4, 6, 7, 1, 8, 2, 3]
 
 def h_8(d):
     d = list(set(d))
-    print(d)
+    return d
 
 
 h_8(d)

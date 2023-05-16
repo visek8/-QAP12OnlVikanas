@@ -8,7 +8,7 @@ def prod(n):
     while n > 0:
         p = p * n
         n = n - 1
-    print(p)
+    return p
 
 
 prod(n)
@@ -28,7 +28,7 @@ def area(s_1, s_2):
         s_1 = s_1 * 2
         s_2 = s_2 * 3
         k = k + 1
-    print(k)
+    return k
 
 
 area(s_1, s_2)

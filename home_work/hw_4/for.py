@@ -9,7 +9,7 @@ s = 0
 def fun_1(a, b, s):
     for i in range(a, b + 1):
         s = s + i
-    print(s)
+    return s
 
 
 fun_1(a, b, s)
@@ -23,7 +23,7 @@ s_1 = 0
 def fun_2(a_1, b_1, s_1):
     for i in range(a_1, b_1):
         s_1 = s_1 + i
-    print(s_1)
+    return s_1
 
 
 fun_2(a_1, b_1, s_1)
@@ -44,7 +44,7 @@ def fun_3(numbers, su, prod, k):
         if i < 0:
             su = i + su
             k = k + 1
-    print(numbers, su, prod, k)
+    return numbers, su, prod, k
 
 
 fun_3(numbers, su, prod, k)
@@ -66,7 +66,7 @@ def swim(swimmer):
     for i in swimmer:
         winner = min(swimmer.values())
         winner_dict = {k: w for k, w in swimmer.items() if w == winner}
-    print(winner_dict)
+    return winner_dict
 
 
 swim(swimmer)
@@ -81,7 +81,7 @@ unik = [1, 5, 2, 9, 2, 9, 1]
 def un(unik):
     for i in unik:
         resalt = (min(unik, key=unik.count))
-    print(resalt)
+    return resalt
 
 
 un(unik)

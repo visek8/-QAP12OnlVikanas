@@ -6,7 +6,7 @@ a = 89
 def func_1(a):
     if a > 0:
         a = a + 1
-    print(a)
+    return a
 
 
 func_1(a)
@@ -27,7 +27,7 @@ def func_2(b, c, d, k):
         k = k + 1
     if d > 0:
         k = k + 1
-    print(k)
+    return k
 
 
 func_2(b, c, d, k)

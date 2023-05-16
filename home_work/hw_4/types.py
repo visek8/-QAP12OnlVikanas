@@ -8,7 +8,7 @@ fav = "I love arrays they are my favorite"
 
 def robin(rob):
     rob = list(rob)
-    print(rob)
+    return rob
 
 
 robin(rob)
@@ -35,7 +35,7 @@ welcome(a, b, c)
 
 def faw(fav):
     fav = "".join(fav)
-    print(fav)
+    return fav
 
 
 faw(fav)
@@ -49,7 +49,7 @@ ex = ['cake', '20', 'ball', 'pill', 'love', 'like', '88', 'eight', ' apple', '8'
 def ex_4(ex):
     ex.pop(6)
     ex[2] = 'doll'
-    print(ex)
+    return ex
 
 
 ex_4(ex)

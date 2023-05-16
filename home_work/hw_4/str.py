@@ -3,7 +3,7 @@
 # конца. Измерьте длину вашей строки.
 def a():
     v: str = 'grfnklgbjksb'
-    print(len(v), v[0], v[-1], v[2], v[-3])
+    return len(v), v[0], v[-1], v[2], v[-3]
 
 
 a()
@@ -21,7 +21,7 @@ def s():
     pol = len(m) / 2  # узнаем середину списка
     n: float = pol - 2  # узнаем начало среза
     k: float = pol + 2  # узнаем конец среза
-    print(n, k, m[5:9], m[2::3], m[::-1])
+    return n, k, m[5:9], m[2::3], m[::-1]
 
 
 s()
@@ -33,7 +33,7 @@ def p():
     y: str = 'my name is name'
     print(y.rfind('name'))
     y = y[:11]
-    print(y + 'Viktoryia')
+    return y + 'Viktoryia'
 
 
 p()
@@ -53,7 +53,7 @@ def kp(test_tring):
     b = test_tring.count('l')
     c = test_tring.startswith('Hello')
     d = test_tring.endswith('qwe')
-    print(a, b, c, d, sep='\n')
+    return a, b, c, d
 
 
 kp(test_tring)
