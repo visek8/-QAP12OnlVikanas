@@ -27,15 +27,17 @@ f_2.close()
 with open("text_1.txt", "r") as n:
     file_2 = n.read()
     arr = file_2.split(' ')
+    f_4 = open('text_3.txt', 'w')
+    f_3 = open('text_2.txt', 'w')
     for i in arr:
         if int(i) % 2 == 0:
-            f_3 = open('text_2.txt', 'w')
-            f_3.write(str(i))
+            s = str(i) + ' '
+            f_3.write(s)
         else:
-            f_4 = open('text_3.txt', 'w')
-            f_4.write(str(i))
-f_4.close()
-f_3.close()
+            s = str(i) + ' '
+            f_4.write(s)
+    f_4.close()
+    f_3.close()
 
 # 3 Дан файл вещественных чисел. Заменить в нем все элементы на их
 # квадраты
@@ -50,19 +52,19 @@ with open('text_1.txt', 'w') as f:
 # 4 Даны два файла произвольного типа. Поменять местами их
 # содержимое. Файлы должны быть бинарного типа
 
-with open ('binfile_1.bin', 'wb') as b_1:
+with open('binfile_1.bin', 'wb') as b_1:
     num_1 = [5, 10, 15, 20, 25, 30]
     t_1 = bytearray(num_1)
     b_1.write(t_1)
-with open ('binfile_2.bin', 'wb') as b_2:
+with open('binfile_2.bin', 'wb') as b_2:
     num_2 = [7, 12, 17, 22, 27, 32]
     t_2 = bytearray(num_2)
     b_2.write(t_2)
-with open ('binfile_1.bin', 'rb') as bb_1:
+with open('binfile_1.bin', 'rb') as bb_1:
     bin_1 = bb_1.read()
 with open('binfile_2.bin', 'rb') as bb_2:
     bin_2 = bb_2.read()
-with open ('binfile_1.bin', 'wb') as b_11:
+with open('binfile_1.bin', 'wb') as b_11:
     b_11.write(bin_2)
-with open ('binfile_2.bin', 'wb') as b_22:
+with open('binfile_2.bin', 'wb') as b_22:
     b_22.write(bin_1)
