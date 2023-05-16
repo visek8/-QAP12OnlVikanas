@@ -1,6 +1,6 @@
 # Придумать класс и методы к нему, использовать инкапсуляцию, полиморфизм и наследование
 class Animal:
-    def __init__(self, legs):
+    def legs(self, legs):
         self.legs = legs
         print('I have', self.legs, 'legs')
 
@@ -16,13 +16,29 @@ class Animal:
 class Dog(Animal):
     nutrition = 'predator'
 
-    def __init__(self):
+    def voice(self):
         print('Dog say: woof woof woof woof')
+
+    def safe(self, i):
+        family = ['mom', 'dad', 'me']
+        for i in family:
+            if i in family:
+                print('hi!')
+            else:
+                print('go away!')
+
+
 class Cat(Animal):
-    def __init__(self):
+    def voice(self):
         print('Cat say: meow meow meow meow meow')
 
-
+    def hunt(self, i):
+        prey = ['mouse', 'shrewmouse', 'rat', 'mole']
+        for i in prey:
+            if i in prey:
+                print('gotcha!')
+            else:
+                print('I hope you are not a pest')
 
 
 # animal = Animal(2)
