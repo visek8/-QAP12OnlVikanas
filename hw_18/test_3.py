@@ -3,11 +3,17 @@ import unittest
 
 class Multiplication:
     def prod(self, n):
-        p = 1
-        while n > 0:
-            p = p * n
-            n = n - 1
-        return p
+        if type(n) not in [int]:
+            raise TypeError('Error')
+        if n < 0:
+            raise ValueError('Error')
+        if n > 100:
+            raise OverflowError('Too big number')
+        f = 1
+        while n > 1:
+            f *= n
+            n -= 1
+        return f
 
 
 class TestMult(unittest.TestCase):
@@ -15,28 +21,28 @@ class TestMult(unittest.TestCase):
         self.m = Multiplication()
 
     def test_negative(self):
-        self.assertEqual(24, self.m.prod(-4), 'good')
+        self.assertEqual('Error', self.m.prod(-4), 'good')
 
     def test_nul(self):
-        self.assertEqual(0, self.m.prod(0), 'good')
+        self.assertEqual(1, self.m.prod(0), 'good')
 
     def test_min(self):
-        self.assertEqual(0.88, self.m.prod(0.5), 'good')
+        self.assertEqual('Error', self.m.prod(0.5), 'good')
 
     def test_frakt(self):
-        self.assertEqual(2, self.m.prod(2.5), 'good')
+        self.assertEqual('Error', self.m.prod(2.5), 'good')
 
     def test_lit(self):
         self.assertEqual(24, self.m.prod(4), 'good')
 
     def test_simbl(self):
-        self.assertEqual(24, self.m.prod('!'), 'good')
+        self.assertEqual('Error', self.m.prod('!'), 'good')
 
     def test_plus(self):
         self.assertEqual(24, self.m.prod(+4), 'good')
 
     def test_ten(self):
-        self.assertEqual('Error', self.m.prod(1000000000), 'good')
+        self.assertEqual('Too big number', self.m.prod(1000000000), 'good')
 
 # 1 отрицательное число
 # 2 0

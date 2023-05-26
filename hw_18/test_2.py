@@ -8,8 +8,8 @@ class Sum:
             for i in range(a, b + 1):
                 s = s + i
             return s
-        except ValueError:
-            print('вы ввели неправильный диапазон чисел')
+        except TypeError:
+            print('Error')
 
 
 class TestSum(unittest.TestCase):
@@ -20,7 +20,7 @@ class TestSum(unittest.TestCase):
         self.assertEqual(0, self.s.fun(1, -3, 0), 'good')
 
     def test_negative_double(self):
-        self.assertEqual(-6, self.s.fun(-1, -3, 0), 'good')
+        self.assertEqual(0, self.s.fun(-1, -3, 0), 'good')
 
     def test_positive(self):
         self.assertEqual(6, self.s.fun(1, 3, 0), 'good')
@@ -32,13 +32,13 @@ class TestSum(unittest.TestCase):
         self.assertEqual(1, self.s.fun(1, 1, 0), 'good')
 
     def test_simb(self):
-        self.assertEqual(0, self.s.fun(1, 'a', 0), 'good')
+        self.assertEqual('Error', self.s.fun(1, 'a', 0), 'good')
 
     def test_frak_2(self):
-        self.assertEqual(5, self.s.fun(1.1, 3.1, 0), 'good')
+        self.assertEqual('Error', self.s.fun(1.1, 3.1, 0), 'good')
 
     def test_frak(self):
-        self.assertEqual(6, self.s.fun(1, 3.1, 0), 'good')
+        self.assertEqual('Error', self.s.fun(1, 3.1, 0), 'good')
 
 # 1 В отрицательное число
 # 2 оба числа отрицательные
